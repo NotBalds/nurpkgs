@@ -11,4 +11,9 @@ stdenv.mkDerivation {
 	nativeBuildInputs = [ gnumake gcc ];
 	buildPhase = "make build";
 	installPhase = "mkdir -p $out/bin && cp out $out/bin/bald";
+	meta = {
+		description = "Bald is deadly simple c++ build system";
+		homepage = "https://github.com/NotBalds/bald";
+		mainProgram = "bald";
+	};
 }
