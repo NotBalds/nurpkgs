@@ -1,3 +1,2 @@
-{ pkgs }: {
-	bald = pkgs.callPackage ./bald {};
-}
+{ pkgs }:
+( import ./pkgs { inherit pkgs; })
